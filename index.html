@@ -2,15 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    <title>Player</title>
   </head>
   <body>
-    <main>
-      <header></header>
-      <section></section>
-      <footer></footer>
-    </main>
+    <section>
+      <div class="player">
+        <div class="thumb">
+          <img src="./castle-germany.gif" alt="" />
+          <div class="info">
+            <div class="details">
+              <div class="title">
+                Reactive
+                <div class="time">
+                  <span id="current">0:00</span>
+                  <span id="duration">0:00</span>
+                </div>
+              </div>
+              <div class="control"></div>
+            </div>
+            <div id="wave"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
