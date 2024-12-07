@@ -25,4 +25,4 @@ wavesurfer = WaveSurfer.create({
   scrollParent: false,
 });
 
-wavesurfer.load('./Chris Isaak - Wicked Game (online-audio-converter.com).m4a');
+wavesurfer.load('./Chris.mp3');
