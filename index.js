@@ -5,8 +5,8 @@ current = document.querySelector('#current');
 playPause = document.querySelector('#playPause');
 
 var timeCalculator = function (value) {
-  second = Math.floor(value % 60);
-  minute = Math.floor((value * 60) % 60);
+  minute = Math.floor(value / 60);
+  second = Math.floor(value - minute * 60);
 
   if (second < 10) {
     second = '0' + second;
@@ -25,4 +25,4 @@ wavesurfer = WaveSurfer.create({
   scrollParent: false,
 });
 
-wavesurfer.load('./Chris Isaak - Wicked Game.mp3');
+wavesurfer.load('./Chris Isaak - Wicked Game (online-audio-converter.com).m4a');
