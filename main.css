@@ -22,3 +22,14 @@ section {
   box-shadow: 0 1rem 1.5rem #10101024;
   overflow: hidden;
 }
+
+.player .thumb {
+  width: 10rem;
+  height: 10rem;
+}
+
+.player .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
